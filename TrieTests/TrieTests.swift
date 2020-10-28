@@ -28,21 +28,39 @@ class TrieTests: XCTestCase {
         let key = "ace"
         let value = "ofBase"
         trie.insert(key,value)
-        let output = trie.root
+        let output = trie.find(key)
+        let expected = "ofBase"
         
+        XCTAssertEqual(output, expected)
+       
         let key2 = "aces"
         let value2 = "clubs"
         trie.insert(key2, value2)
+        let output2 = trie.find(key2)
+        let expected2 = "clubs"
         
-        let output2 = trie.root
-        
+        XCTAssertEqual(output2, expected2)
         
         let key3 = "bat"
         let value3 = "baseball"
         trie.insert(key3, value3)
+        let output3 = trie.find(key3)
+        let expected3 = "baseball"
         
-        let output3 = trie.root
-        print("test")
+        XCTAssertEqual(output3, expected3)
+       
+    }
+    
+    func testThatATrieCanFindAValueFromAKey() {
+        let trie = Trie()
         
+        let key = "bat"
+        let value = "baseball"
+        trie.insert(key, value)
+        
+        let output = trie.find(key)
+        let expected = "baseball"
+        
+        XCTAssertEqual(output, expected)
     }
 }

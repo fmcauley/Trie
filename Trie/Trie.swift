@@ -27,4 +27,20 @@ class Trie {
         current.value = value
     }
     
+    func find(_ key: String) -> String? {
+        
+        var current = root
+        
+        for x in key {
+            let str = String(x)
+            if current.children[str] != nil {
+                current = current.children[str] ?? TrieNode()
+            } else {
+                return nil
+            }
+        }
+        
+        return current.value
+    }
+    
 }
