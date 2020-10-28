@@ -63,4 +63,13 @@ class TrieTests: XCTestCase {
         
         XCTAssertEqual(output, expected)
     }
+    
+    func testThatAKeyNotInTheTrieReturnsNil() {
+        let trie = Trie()
+        
+        let key = "bat"
+        
+        let output = trie.find(key)
+        XCTAssertNil(output)
+    }
 }
