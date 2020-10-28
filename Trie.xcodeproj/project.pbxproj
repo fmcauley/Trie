@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		F00D9A472548F82900D419F7 /* Trie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00D9A3D2548F82800D419F7 /* Trie.framework */; };
 		F00D9A4C2548F82900D419F7 /* TrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D9A4B2548F82900D419F7 /* TrieTests.swift */; };
-		F00D9A4E2548F82900D419F7 /* Trie.h in Headers */ = {isa = PBXBuildFile; fileRef = F00D9A402548F82800D419F7 /* Trie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F00D9A5C2548F8AF00D419F7 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D9A5B2548F8AF00D419F7 /* Trie.swift */; };
+		F00D9A602548F8F900D419F7 /* TrieNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D9A5F2548F8F900D419F7 /* TrieNodeTests.swift */; };
+		F00D9A642548F94B00D419F7 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D9A632548F94B00D419F7 /* TrieNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,13 @@
 
 /* Begin PBXFileReference section */
 		F00D9A3D2548F82800D419F7 /* Trie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F00D9A402548F82800D419F7 /* Trie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trie.h; sourceTree = "<group>"; };
 		F00D9A412548F82800D419F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F00D9A462548F82900D419F7 /* TrieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00D9A4B2548F82900D419F7 /* TrieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTests.swift; sourceTree = "<group>"; };
 		F00D9A4D2548F82900D419F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F00D9A5B2548F8AF00D419F7 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		F00D9A5F2548F8F900D419F7 /* TrieNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNodeTests.swift; sourceTree = "<group>"; };
+		F00D9A632548F94B00D419F7 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +75,9 @@
 		F00D9A3F2548F82800D419F7 /* Trie */ = {
 			isa = PBXGroup;
 			children = (
-				F00D9A402548F82800D419F7 /* Trie.h */,
 				F00D9A412548F82800D419F7 /* Info.plist */,
+				F00D9A5B2548F8AF00D419F7 /* Trie.swift */,
+				F00D9A632548F94B00D419F7 /* TrieNode.swift */,
 			);
 			path = Trie;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			children = (
 				F00D9A4B2548F82900D419F7 /* TrieTests.swift */,
 				F00D9A4D2548F82900D419F7 /* Info.plist */,
+				F00D9A5F2548F8F900D419F7 /* TrieNodeTests.swift */,
 			);
 			path = TrieTests;
 			sourceTree = "<group>";
@@ -93,7 +99,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F00D9A4E2548F82900D419F7 /* Trie.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +152,7 @@
 				TargetAttributes = {
 					F00D9A3C2548F82800D419F7 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					F00D9A452548F82900D419F7 = {
 						CreatedOnToolsVersion = 12.0;
@@ -194,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00D9A5C2548F8AF00D419F7 /* Trie.swift in Sources */,
+				F00D9A642548F94B00D419F7 /* TrieNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F00D9A4C2548F82900D419F7 /* TrieTests.swift in Sources */,
+				F00D9A602548F8F900D419F7 /* TrieNodeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		F00D9A522548F82900D419F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fm.Trie;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +375,7 @@
 		F00D9A532548F82900D419F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -388,6 +400,7 @@
 		F00D9A552548F82900D419F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T2XWZFPH38;
@@ -406,6 +419,7 @@
 		F00D9A562548F82900D419F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T2XWZFPH38;
