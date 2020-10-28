@@ -22,4 +22,27 @@ class TrieTests: XCTestCase {
         let trie = Trie()
         XCTAssertNotNil(trie)
     }
+    
+    func testThatATrieCanInsertValues() {
+        let trie = Trie()
+        let key = "ace"
+        let value = "ofBase"
+        trie.insert(key,value)
+        let output = trie.root
+        
+        let key2 = "aces"
+        let value2 = "clubs"
+        trie.insert(key2, value2)
+        
+        let output2 = trie.root
+        
+        
+        let key3 = "bat"
+        let value3 = "baseball"
+        trie.insert(key3, value3)
+        
+        let output3 = trie.root
+        print("test")
+        
+    }
 }

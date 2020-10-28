@@ -7,5 +7,10 @@
 
 import Foundation
 class TrieNode {
+    var value: String?
+    var children:[String: TrieNode]
     
+    init() {
+        self.children = [String: TrieNode]()
+    }
 }
