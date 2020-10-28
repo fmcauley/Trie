@@ -12,6 +12,9 @@
 		F00D9A5C2548F8AF00D419F7 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D9A5B2548F8AF00D419F7 /* Trie.swift */; };
 		F00D9A602548F8F900D419F7 /* TrieNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D9A5F2548F8F900D419F7 /* TrieNodeTests.swift */; };
 		F00D9A642548F94B00D419F7 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D9A632548F94B00D419F7 /* TrieNode.swift */; };
+		F0F2C66B2549D107006B14A8 /* WordFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2C66A2549D107006B14A8 /* WordFilter.swift */; };
+		F0F2C66F2549D132006B14A8 /* WordFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2C66E2549D132006B14A8 /* WordFilterTests.swift */; };
+		F0F2C6732549D8E5006B14A8 /* WordFilterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2C6722549D8E5006B14A8 /* WordFilterNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 		F00D9A5B2548F8AF00D419F7 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		F00D9A5F2548F8F900D419F7 /* TrieNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNodeTests.swift; sourceTree = "<group>"; };
 		F00D9A632548F94B00D419F7 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		F0F2C66A2549D107006B14A8 /* WordFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFilter.swift; sourceTree = "<group>"; };
+		F0F2C66E2549D132006B14A8 /* WordFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFilterTests.swift; sourceTree = "<group>"; };
+		F0F2C6722549D8E5006B14A8 /* WordFilterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFilterNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,8 @@
 				F00D9A412548F82800D419F7 /* Info.plist */,
 				F00D9A5B2548F8AF00D419F7 /* Trie.swift */,
 				F00D9A632548F94B00D419F7 /* TrieNode.swift */,
+				F0F2C66A2549D107006B14A8 /* WordFilter.swift */,
+				F0F2C6722549D8E5006B14A8 /* WordFilterNode.swift */,
 			);
 			path = Trie;
 			sourceTree = "<group>";
@@ -88,6 +96,7 @@
 				F00D9A4B2548F82900D419F7 /* TrieTests.swift */,
 				F00D9A4D2548F82900D419F7 /* Info.plist */,
 				F00D9A5F2548F8F900D419F7 /* TrieNodeTests.swift */,
+				F0F2C66E2549D132006B14A8 /* WordFilterTests.swift */,
 			);
 			path = TrieTests;
 			sourceTree = "<group>";
@@ -200,8 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F2C66B2549D107006B14A8 /* WordFilter.swift in Sources */,
 				F00D9A5C2548F8AF00D419F7 /* Trie.swift in Sources */,
 				F00D9A642548F94B00D419F7 /* TrieNode.swift in Sources */,
+				F0F2C6732549D8E5006B14A8 /* WordFilterNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F2C66F2549D132006B14A8 /* WordFilterTests.swift in Sources */,
 				F00D9A4C2548F82900D419F7 /* TrieTests.swift in Sources */,
 				F00D9A602548F8F900D419F7 /* TrieNodeTests.swift in Sources */,
 			);
