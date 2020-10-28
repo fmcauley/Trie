@@ -35,6 +35,7 @@ class WordFilterTests: XCTestCase {
     func testThatWordFilterCanFilterAWordForAPrefixAndSuffix() {
         let wf = WordFilter()
         wf.insert("apple", "apple")
+        wf.insert("app", "test value")
         let output = wf.f("a","e")
         let expected = true
         
